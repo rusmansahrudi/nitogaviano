@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kartu Cinta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="hearts"></div>
+
+  <div class="card">
+    <img src="nitomecca.jpg" alt="Foto Pacar">
+    <h2 id="nama">💖 NITO SAYANG MECCA 💖</h2>
+    <p id="typing-text"></p>
+
+    <h3>Pilih tempat date kita 😚</h3>
+    <select id="dateOption">
+      <option value="dinner romantis">Makan malam🍷</option>
+      <option value="minum matcha bareng">Minum matcha bareng 🍵</option>
+      <option value="jalan sore">Jalan sore di taman 🌇</option>
+    </select>
+    <button onclick="pilihDate()">Pilih</button>
+
+    <div class="question">
+      <h3>Tebak-tebakan lucu 😆</h3>
+      <p id="tebak"></p>
+      <input type="text" id="jawaban" placeholder="Tulis jawabanmu di sini...">
+      <button onclick="cekJawaban()">Jawab 💌</button>
+      <button onclick="tanya()">Tanya Lagi 💭</button>
+      <p id="hasilJawaban"></p>
+    </div>
+  </div>
+
+  <!-- 🎵 Tombol Musik Romantis (pindahkan ke bawah card) -->
+  <div class="music-container">
+    <button id="musicButton">🎶 Putar Musik 💞</button>
+    <audio id="bgMusic" loop>
+      <source src="jazzmusic.mp3" type="audio/mpeg">
+      Browser kamu tidak mendukung audio.
+    </audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
